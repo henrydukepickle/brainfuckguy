@@ -20,5 +20,7 @@
     ] / 5
     < move to big number on 4 / 4
 ] exit loop / 4
->># print quotient / 6
-<<<<# print remainder / 2
+>>. output quotient / 6
+<<<< go to remaining tally on 2 / 2
+[<->-] subtract tally from remaining small number to get remainder / 2
+<. output remainder / 2

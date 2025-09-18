@@ -18,19 +18,3 @@ pub enum Command {
     Interact,
     Call(FunctionCall),
 }
-
-pub fn command_from_char(ch: char) -> Option<Command> {
-    Some(match ch {
-        '<' => Command::MoveLeft,
-        '>' => Command::MoveRight,
-        '+' => Command::Plus,
-        '-' => Command::Minus,
-        '[' => Command::LoopStart,
-        ']' => Command::LoopEnd,
-        '.' => Command::Out,
-        ',' => Command::In,
-        '#' => Command::Debug,
-        '|' => Command::Interact,
-        _ => return None,
-    })
-}

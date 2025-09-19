@@ -99,6 +99,8 @@ impl Interpreter {
                 if out_ind < func_out.len() {
                     self.cells[self.data_pointer as usize] = func_out[out_ind];
                     out_ind += 1;
+                } else {
+                    self.cells[self.data_pointer as usize] = 0;
                 }
             }
             inst_out.position += 1;

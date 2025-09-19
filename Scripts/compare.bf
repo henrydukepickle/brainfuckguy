@@ -5,7 +5,7 @@ returns 1 if the first passed input is leq the second and 0 otherwise
     >>>>+<<<<
 ]
 >>[<<+>>-]>>
--[++.-]
+-[++.-]<<<<
 [ enter loop on 0
     ->-< subtract from both
     [

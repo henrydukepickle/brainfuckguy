@@ -2,7 +2,7 @@
 This esolang expands on brainfuck by adding a syntax for defining and calling functions.
 
 The core structure of the language is the same as that of brainfuck, and the basic commands `+ - < > [ ]` work exactly as they do in brainfuck.
-#Function Calling Syntax
+## Function Calling Syntax
 To call a function, the syntax:
 
 `{name}(input)(output)` is used.
@@ -32,7 +32,7 @@ It will read the first two arguments and add them, and then return a list contai
 This function writes the first argument to the first cell, and then begins calling `add`. In the input, it clones the value in the first cell to the second and third cells, and then adds both of those values to the arguments, which are passed to `add`
 at the end of the `input` block. In the output block, the single output returned by `add` is written to the current cell and then added to the `outputs` of `multiply_by_2`. Once that function terminates, it returns this single value.
 
-#Using the Program
+## Using the Program
 
 Functions can be created by creating a `.bf` file in the `Scripts` folder. The name of the function will be the name of the file (without the extension). There is not yet a build for the program, so the only way to run the program is by calling the
 provided `start(args)` method in `main.rs` with a vector containing your desired arguments. This will call `main.bf` with these arguments.
